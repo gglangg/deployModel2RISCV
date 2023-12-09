@@ -1,10 +1,5 @@
 #bin/bash
 
-wget https://github.com/Kitware/CMake/releases/download/v3.28.0/cmake-3.28.0.tar.gz &&\
-tar -xvf cmake-3.28.0.tar.gz &&\
-cd cmake-3.28.0 &&\
-./bootstrap && make install &&\
-git clone https://github.com/gglangg/deployModel2RISCV &&\
 chmod +x riscv_bootstrap.sh && ./riscv_bootstrap.sh &&\
 git clone https://github.com/openxla/iree &&\
 cd iree && git submodule update --init &&\
